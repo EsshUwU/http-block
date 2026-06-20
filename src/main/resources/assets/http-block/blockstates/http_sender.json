@@ -1,0 +1,10 @@
+{
+	"variants": {
+		"powered=false": {
+			"model": "http-block:block/http_sender"
+		},
+		"powered=true": {
+			"model": "http-block:block/http_sender_powered"
+		}
+	}
+}

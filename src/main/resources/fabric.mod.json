@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "http-block",
+	"version": "${version}",
+	"name": "HTTP Block",
+	"description": "Redstone blocks for sending HTTP POST requests and receiving event-based HTTP pulses.",
+	"authors": [
+		"HTTP Block"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/http-block/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.httpblock.HTTPBlock"
+		],
+		"client": [
+			"com.httpblock.client.HTTPBlockClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
