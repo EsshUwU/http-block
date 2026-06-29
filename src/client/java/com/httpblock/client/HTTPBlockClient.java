@@ -10,6 +10,6 @@ public class HTTPBlockClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
 		ClientPlayNetworking.registerGlobalReceiver(HttpBlockPayloads.OpenConfig.TYPE, (payload, context) ->
-				Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreen(new HttpBlockConfigScreen(payload))));
+				Minecraft.getInstance().execute(() -> Minecraft.getInstance().setScreenAndShow(new HttpBlockConfigScreen(payload))));
 	}
 }
